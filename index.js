@@ -13,7 +13,7 @@ var prefix = ('/');
 
 //LOG
 
-    bot.login('MzkyNDE2NTQxODkyOTM1Njgz.DRsq3A.6GwsTJTcfF2I0aZ2dzKP8iR7DME');
+    bot.login(process.env.TOKEN);
 
 
 //MESSAGE DESTINÉ AU BOT PAR LES UTILISATEURS 
