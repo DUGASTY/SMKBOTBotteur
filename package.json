@@ -1,0 +1,14 @@
+{
+  "name": "LeBotteur",
+  "version": "1.0.0",
+  "description": "BOT du serveur SMK Sniper's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yvan DUGAST, alias DUGASTY56 ou DUGASTY",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
