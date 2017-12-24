@@ -30,53 +30,6 @@ var prefix = ('/');
         }
 
         
-//TEST POUR LE RANDNUM 
-
-/*if(message.content == 'chiffre') {
-    random();
-
-    if (rand == 1) {
-        message.reply('1');
-    }
-
-    if (rand == 2) {
-        message.reply('2');
-    }
-
-    if (rand == 3) {
-        message.reply('3');
-    }
-
-    if (rand == 4) {
-        message.reply('4');
-    }
-
-    if (rand == 5) {
-        message.reply('5');
-    }
-
-    if (rand == 61) {
-        message.reply('6');
-    }
-
-    if (rand == 7) {
-        message.reply('7');
-    }
-
-    if (rand == 81) {
-        message.reply('8');
-    }
-
-    if (rand == 9) {
-        message.reply('9');
-    }
-
-    if (rand == 10) {
-        message.reply('10');
-    }
-}*/
-
-
 
 //ADJOINT REQUEST
 
@@ -88,7 +41,7 @@ var prefix = ('/');
         console.log('attente adjoint');
      }
 
-//ADMIN REQUEST
+/*//ADMIN REQUEST
 
      if(message.content == prefix + 'Admin') {
         var admin_embed = new Discord.RichEmbed()
@@ -100,10 +53,20 @@ var prefix = ('/');
         console.log('attente admin');
      }
 
+});*/
+
+
+    if(command === 'foo') {
+        let AdminRole = message.guild.roles.find('name', 'Admin');
+        if(message.member.roles.has(AdminRole.id)) {
+            message.reply('ok');
+        } else {
+            message.channel.reply('Tu ne peux pas faire ça !')
+        }
+        
+    }
+
 });
-
-
-
 
 //MESSAGE DE BIENVENUE
 
@@ -143,6 +106,3 @@ var prefix = ('/');
         max = Math.floor(5);
         rand = Math.floor(Math.random() * (max - min +1) + min);
     }
-  
-    
-
