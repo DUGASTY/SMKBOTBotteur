@@ -1,8 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-//var getRandomIntInclusive = getRandomIntInclusive();
-//var rand = 0;
+
 var prefix = ('/');
 
 //JEU DU BOT 
@@ -29,6 +28,55 @@ var prefix = ('/');
 
             message.reply('Hey petit asticot !'); 
         }
+
+//TEST POUR LE RANDNUM 
+
+if(message.content == 'Donne moi un chiffre entre 1 et 10') {
+    random();
+
+    if (randnum == 1) {
+        message.reply('1');
+    }
+
+    if (randnum == 2) {
+        message.reply('2');
+    }
+
+    if (randnum == 3) {
+        message.reply('3');
+    }
+
+    if (randnum == 4) {
+        message.reply('4');
+    }
+
+    if (randnum == 5) {
+        message.reply('5');
+    }
+
+    if (randnum == 61) {
+        message.reply('6');
+    }
+
+    if (randnum == 7) {
+        message.reply('7');
+    }
+
+    if (randnum == 81) {
+        message.reply('8');
+    }
+
+    if (randnum == 9) {
+        message.reply('9');
+    }
+
+    if (randnum == 10) {
+        message.reply('10');
+    }
+}
+
+
+
 
 //ADJOINT REQUEST
 
@@ -59,8 +107,7 @@ var prefix = ('/');
 
     bot.on('guildMemberAdd', member => {
         let role = member.guild.roles.find('name', 'test-bot');
-        var rand = Math.floor(Math.random() * 6);
-        
+        random();
         if(rand == 0){
             member.guild.channels.find('name', 'test-bot').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ');
         }
@@ -86,13 +133,21 @@ var prefix = ('/');
         }
 
         member.addRole(role)
-        //member.guild.channels.find('name', 'general').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ')
+        
     });
 
-  /*function getRandomIntInclusive(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min +1)) + min;
-      }*/
 
+    function random(min, max) {
+        min = Math.ceil(0);
+        max = Math.floor(9);
+        randnum = Math.floor(Math.random() * (max - min +1) + min);
+    }
+  
+    function random(min, max) {
+        min = Math.ceil(0);
+        max = Math.floor(5);
+        rand = Math.floor(Math.random() * (max - min +1) + min);
+    }
+  
     
+
