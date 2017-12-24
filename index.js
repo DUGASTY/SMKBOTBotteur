@@ -29,18 +29,7 @@ var prefix = ('/');
             message.reply('Hey petit asticot !'); 
         }
 
-        if(message.content == 'mention') {
-            var AdminRole = message.channel.server.roles.get('name', 'Admin');
-    
-            //bot.sendMessage(message, AdminRole.mention() + 'is anyone here?');
-
-            var adjoint_embed = new Discord.RichEmbed()
-            .setColor('#E32416')
-            .addField('Vous avez demandé un Administrateur du serveur, merci de patienter !', 'Vous pouvez déjà vous rendre dans le salon #Probleme_membre pour y exposer votre soucis !')
-            .addField('Désolé pour la gêne que vous avez rencontré', 'Nous allons faire notre possible pour y remédier !')
-            .setFooter('Merci de votre compréhension')
-            message.channel.sendEmbed(adjoint_embed, AdminRole.mention()); 
-
+        
 //TEST POUR LE RANDNUM 
 
 /*if(message.content == 'chiffre') {
@@ -88,7 +77,7 @@ var prefix = ('/');
 }*/
 
 //ADJOINT REQUEST TEST
-bot.on('message', msg => {
+/*bot.on('message', msg => {
     if(msg.content == 'mention') {
         var AdminRole = msg.channel.server.roles.get('name', 'Admin');
 
@@ -96,18 +85,25 @@ bot.on('message', msg => {
         // 1
         bot.sendMessage(msg, AdminRole.mention() + 'is anyone here?');
         // 2
-        //bot.sendMessage(msg, hereRole.toString() + '' is anyone here?'');
+        bot.sendMessage(msg, hereRole.toString() + '' is anyone here?'');
         // 3
-        //bot.sendMessage(msg, hereRole + ' is anyone here?');
+        bot.sendMessage(msg, hereRole + ' is anyone here?');
     }
-});
+});*/
 
 
 
 
 
+if(message.content == 'mention') {
+            var AdminRole = message.channel.server.roles.get('name', 'Admin');
+    
+            bot.sendMessage(message, AdminRole.mention() + 'test admin');
 
-//ADJOINT REQUEST
+            
+
+
+/*//ADJOINT REQUEST
 
      if(message.content == prefix + 'Adjoint') {
         var adjoint_embed = new Discord.RichEmbed()
@@ -120,7 +116,7 @@ bot.on('message', msg => {
 //ADMIN REQUEST
 
      if(message.content == prefix + 'Admin') {
-        var adjoint_embed = new Discord.RichEmbed()
+        var admin_embed = new Discord.RichEmbed()
             .setColor('#E32416')
             .addField('Vous avez demandé un Administrateur du serveur, merci de patienter !', 'Vous pouvez déjà vous rendre dans le salon #Probleme_membre pour y exposer votre soucis !')
             .addField('Désolé pour la gêne que vous avez rencontré', 'Nous allons faire notre possible pour y remédier !')
@@ -129,7 +125,9 @@ bot.on('message', msg => {
         console.log('attente admin');
      }
 
-});
+});*/
+
+
 
 
 //MESSAGE DE BIENVENUE
