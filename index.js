@@ -22,7 +22,7 @@ var prefix = ('/');
 
         if(message.content == 'bonjour bot') {
 
-            message.reply('Salut à toi ! Ravi que tu te soucie de moi, je sais en prendre bonne note !); 
+            message.reply('Salut à toi ! Ravi que tu te soucie de moi, je sais en prendre bonne note !'); 
         }
 
         if(message.content == 'bonjour le botteur') {
