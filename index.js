@@ -90,6 +90,7 @@ var prefix = ('/');
 
     function generateRandomNumber (){
         var rand = Math.floor(Math.random() * 5) + 1 ;
+        return rand;
     }
 
 
