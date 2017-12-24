@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 //var getRandomIntInclusive = getRandomIntInclusive();
-
+//var rand = 0;
 var prefix = ('/');
 
 //JEU DU BOT 
@@ -59,7 +59,8 @@ var prefix = ('/');
 
     bot.on('guildMemberAdd', member => {
         let role = member.guild.roles.find('name', 'test-bot');
-
+        var rand = Math.floor(Math.random() * 6);
+        
         if(rand == 0){
             member.guild.channels.find('name', 'test-bot').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ');
         }
@@ -88,15 +89,7 @@ var prefix = ('/');
         //member.guild.channels.find('name', 'general').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ')
     });
 
-    function generateRandomNumber (){
-        var rand = Math.floor(Math.random() * 5);
-        var roundNumber = Math.ceil(rand):
-        return rand;
-    }
-
-
-    //var getRandom = 
-       /* function getRandomIntInclusive(min, max) {
+  /*function getRandomIntInclusive(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min +1)) + min;
