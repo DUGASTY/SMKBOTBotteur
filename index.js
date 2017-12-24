@@ -31,7 +31,7 @@ var prefix = ('/');
 
 //TEST POUR LE RANDNUM 
 
-if(message.content == 'chiffre') {
+/*if(message.content == 'chiffre') {
     random();
 
     if (rand == 1) {
@@ -73,7 +73,7 @@ if(message.content == 'chiffre') {
     if (rand == 10) {
         message.reply('10');
     }
-}
+}*/
 
 
 
@@ -135,13 +135,6 @@ if(message.content == 'chiffre') {
         member.addRole(role)
         
     });
-
-
-    /*function random(min, max) {
-        min = Math.ceil(0);
-        max = Math.floor(9);
-        randnum = Math.floor(Math.random() * (max - min +1) + min);
-    }*/
   
     function random(min, max) {
         min = Math.ceil(0);
