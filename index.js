@@ -76,34 +76,9 @@ var prefix = ('/');
     }
 }*/
 
-//ADJOINT REQUEST TEST
-/*bot.on('message', msg => {
-    if(msg.content == 'mention') {
-        var AdminRole = msg.channel.server.roles.get('name', 'Admin');
-
-        // All of these three produce the same output
-        // 1
-        bot.sendMessage(msg, AdminRole.mention() + 'is anyone here?');
-        // 2
-        bot.sendMessage(msg, hereRole.toString() + '' is anyone here?'');
-        // 3
-        bot.sendMessage(msg, hereRole + ' is anyone here?');
-    }
-});*/
 
 
-
-
-
-if(message.content == 'mention') {
-            var AdminRole = message.channel.server.roles.get('name', 'Admin');
-    
-            bot.sendMessage(message, AdminRole.mention() + 'test admin');
-
-            
-
-
-/*//ADJOINT REQUEST
+//ADJOINT REQUEST
 
      if(message.content == prefix + 'Adjoint') {
         var adjoint_embed = new Discord.RichEmbed()
@@ -121,11 +96,11 @@ if(message.content == 'mention') {
             .addField('Vous avez demandé un Administrateur du serveur, merci de patienter !', 'Vous pouvez déjà vous rendre dans le salon #Probleme_membre pour y exposer votre soucis !')
             .addField('Désolé pour la gêne que vous avez rencontré', 'Nous allons faire notre possible pour y remédier !')
             .setFooter('Merci de votre compréhension')
-        message.channel.sendEmbed(adjoint_embed); 
+        message.channel.sendEmbed(admin_embed); 
         console.log('attente admin');
      }
 
-});*/
+});
 
 
 
