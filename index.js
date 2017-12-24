@@ -13,7 +13,7 @@ var prefix = ('/');
 
 //LOG
 
-    bot.login(process.env.TOKEN);
+    bot.login('MzkyNDE2NTQxODkyOTM1Njgz.DRsq3A.6GwsTJTcfF2I0aZ2dzKP8iR7DME');
 
 
 //MESSAGE DESTINÉ AU BOT PAR LES UTILISATEURS 
@@ -58,30 +58,30 @@ var prefix = ('/');
 //MESSAGE DE BIENVENUE
 
     bot.on('guildMemberAdd', member => {
-        let role = member.guild.roles.find('name', 'general');
+        let role = member.guild.roles.find('name', 'test-bot');
 
         if(randMessageBienvenue == 0){
-            member.guild.channels.find('name', 'general').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ');
+            member.guild.channels.find('name', 'test-bot').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ');
         }
 
         if(randMessageBienvenue == 1){
-            member.guild.channels.find('name', 'general').send(':nail_care:  Bienvenue ${member.user.username} Dis bonjour quand tu me croise, tu as interêt.. parce que je suis un fou moi, UN DÉGLINGO !!! je suis capable du pire... DU PIIIIIIRE !!!!!!  :baby_bottle:');
+            member.guild.channels.find('name', 'test-bot').send(':nail_care:  Bienvenue ${member.user.username} Dis bonjour quand tu me croise, tu as interêt.. parce que je suis un fou moi, UN DÉGLINGO !!! je suis capable du pire... DU PIIIIIIRE !!!!!!  :baby_bottle:');
         }
 
         if(randMessageBienvenue == 2){
-            member.guild.channels.find('name', 'general').send(':poop: WOOOOOOAAAAAAAAWWWWWW, classe ta collection de poupée russe gabonaise ${member.user.username} dis.... tu fais quoi mercredi prochain ? je fais un petit dîner entre amis.... :innocent: :innocent: :champagne_glass: ');
+            member.guild.channels.find('name', 'test-bot').send(':poop: WOOOOOOAAAAAAAAWWWWWW, classe ta collection de poupée russe gabonaise ${member.user.username} dis.... tu fais quoi mercredi prochain ? je fais un petit dîner entre amis.... :innocent: :innocent: :champagne_glass: ');
         }
 
         if(randMessageBienvenue == 3){
-            member.guild.channels.find('name', 'general').send(':ambulance: Bienvenue ${member.user.username} met toi à ton aise, je répondrais au mieux à tes attentes... mais reste tranquil mon gars, je suis un simple robot mais je peux te mettre une belle volée !!! ...... bah quoi faut pas avoir peur... rhoo on peut plus rigoler jme casse ! :persevere:' );
+            member.guild.channels.find('name', 'test-bot').send(':ambulance: Bienvenue ${member.user.username} met toi à ton aise, je répondrais au mieux à tes attentes... mais reste tranquil mon gars, je suis un simple robot mais je peux te mettre une belle volée !!! ...... bah quoi faut pas avoir peur... rhoo on peut plus rigoler jme casse ! :persevere:' );
         }
 
         if(randMessageBienvenue == 4){
-            member.guild.channels.find('name', 'general').send(':grin: Mesdames et Messieurs les gens, veuillez accueillir comme il se doit ${member.user.username} YOUHOUUUUUUU :underage: :tropical_drink: :champagne: :beers: ');
+            member.guild.channels.find('name', 'test-bot').send(':grin: Mesdames et Messieurs les gens, veuillez accueillir comme il se doit ${member.user.username} YOUHOUUUUUUU :underage: :tropical_drink: :champagne: :beers: ');
         }
 
         if(randMessageBienvenue == 5){
-            member.guild.channels.find('name', 'general').send(':tongue: Ouaaiiii de la chaire fraîche !!!! je peux jouer avec toi ? dis ${member.user.username} tu veux être mon ami ? dis oui :heart_eyes: :heart_eyes: stppp dis ouiiiii :heart_eyes: :innocent:');
+            member.guild.channels.find('name', 'test-bot').send(':tongue: Ouaaiiii de la chaire fraîche !!!! je peux jouer avec toi ? dis ${member.user.username} tu veux être mon ami ? dis oui :heart_eyes: :heart_eyes: stppp dis ouiiiii :heart_eyes: :innocent:');
         }
 
         member.addRole(role)
@@ -91,8 +91,8 @@ var prefix = ('/');
     function random(min, max) {
         min = Math.ceil(0);
         max = Math.floor(5);
-        randMessageBienvenue = Math.floor((Math.random() * 5) + 1);
-        //A TESTER ! : randMessageBienvenue = Math.floor(Math.random() * (max - min + 1)) + min;
+        //randMessageBienvenue = Math.floor((Math.random() * 5) + 1);
+        randMessageBienvenue = Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
     
