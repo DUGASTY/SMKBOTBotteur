@@ -60,27 +60,27 @@ var prefix = ('/');
     bot.on('guildMemberAdd', member => {
         let role = member.guild.roles.find('name', 'test-bot');
 
-        if(getRandom == 0){
+        if(rand == 0){
             member.guild.channels.find('name', 'test-bot').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ');
         }
 
-        if(getRandom == 1){
+        if(rand == 1){
             member.guild.channels.find('name', 'test-bot').send(':nail_care:  Bienvenue ${member.user.username} Dis bonjour quand tu me croise, tu as interêt.. parce que je suis un fou moi, UN DÉGLINGO !!! je suis capable du pire... DU PIIIIIIRE !!!!!!  :baby_bottle:');
         }
 
-        if(getRandom == 2){
+        if(rand == 2){
             member.guild.channels.find('name', 'test-bot').send(':poop: WOOOOOOAAAAAAAAWWWWWW, classe ta collection de poupée russe gabonaise ${member.user.username} dis.... tu fais quoi mercredi prochain ? je fais un petit dîner entre amis.... :innocent: :innocent: :champagne_glass: ');
         }
 
-        if(getRandom == 3){
+        if(rand == 3){
             member.guild.channels.find('name', 'test-bot').send(':ambulance: Bienvenue ${member.user.username} met toi à ton aise, je répondrais au mieux à tes attentes... mais reste tranquil mon gars, je suis un simple robot mais je peux te mettre une belle volée !!! ...... bah quoi faut pas avoir peur... rhoo on peut plus rigoler jme casse ! :persevere:' );
         }
 
-        if(getRandom == 4){
+        if(rand == 4){
             member.guild.channels.find('name', 'test-bot').send(':grin: Mesdames et Messieurs les gens, veuillez accueillir comme il se doit ${member.user.username} YOUHOUUUUUUU :underage: :tropical_drink: :champagne: :beers: ');
         }
 
-        if(getRandom == 5){
+        if(rand == 5){
             member.guild.channels.find('name', 'test-bot').send(':tongue: Ouaaiiii de la chaire fraîche !!!! je peux jouer avec toi ? dis ${member.user.username} tu veux être mon ami ? dis oui :heart_eyes: :heart_eyes: stppp dis ouiiiii :heart_eyes: :innocent:');
         }
 
@@ -88,10 +88,16 @@ var prefix = ('/');
         //member.guild.channels.find('name', 'general').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ')
     });
 
-    var getRandom = function getRandomIntInclusive(min, max) {
+    function generateRandomNumber (){
+        var rand = Math.floor(Math.random() * 5) + 1 ;
+    }
+
+
+    //var getRandom = 
+       /* function getRandomIntInclusive(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min +1)) + min;
-      }
+      }*/
 
     
