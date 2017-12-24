@@ -89,7 +89,8 @@ var prefix = ('/');
     });
 
     function generateRandomNumber (){
-        var rand = Math.floor(Math.random() * 5) + 1 ;
+        var rand = Math.floor(Math.random() * 4) + 1 ;
+        var roundNumber = Math.ceil(rand):
         return rand;
     }
 
