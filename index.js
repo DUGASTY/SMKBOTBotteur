@@ -31,46 +31,46 @@ var prefix = ('/');
 
 //TEST POUR LE RANDNUM 
 
-if(message.content == 'Donne moi un chiffre entre 1 et 10') {
+if(message.content == 'chiffre') {
     random();
 
-    if (randnum == 1) {
+    if (rand == 1) {
         message.reply('1');
     }
 
-    if (randnum == 2) {
+    if (rand == 2) {
         message.reply('2');
     }
 
-    if (randnum == 3) {
+    if (rand == 3) {
         message.reply('3');
     }
 
-    if (randnum == 4) {
+    if (rand == 4) {
         message.reply('4');
     }
 
-    if (randnum == 5) {
+    if (rand == 5) {
         message.reply('5');
     }
 
-    if (randnum == 61) {
+    if (rand == 61) {
         message.reply('6');
     }
 
-    if (randnum == 7) {
+    if (rand == 7) {
         message.reply('7');
     }
 
-    if (randnum == 81) {
+    if (rand == 81) {
         message.reply('8');
     }
 
-    if (randnum == 9) {
+    if (rand == 9) {
         message.reply('9');
     }
 
-    if (randnum == 10) {
+    if (rand == 10) {
         message.reply('10');
     }
 }
@@ -106,7 +106,7 @@ if(message.content == 'Donne moi un chiffre entre 1 et 10') {
 //MESSAGE DE BIENVENUE
 
     bot.on('guildMemberAdd', member => {
-        let role = member.guild.roles.find('name', 'test-bot');
+        let role = member.guild.roles.find('name', 'membre');
         random();
         if(rand == 0){
             member.guild.channels.find('name', 'test-bot').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ');
@@ -137,11 +137,11 @@ if(message.content == 'Donne moi un chiffre entre 1 et 10') {
     });
 
 
-    function random(min, max) {
+    /*function random(min, max) {
         min = Math.ceil(0);
         max = Math.floor(9);
         randnum = Math.floor(Math.random() * (max - min +1) + min);
-    }
+    }*/
   
     function random(min, max) {
         min = Math.ceil(0);
