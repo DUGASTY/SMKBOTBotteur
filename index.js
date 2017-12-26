@@ -1,4 +1,4 @@
-/*const Discord = require('discord.js');
+const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 
@@ -50,7 +50,7 @@ if(message.content == prefix + 'regles01') {
         console.log('attente adjoint');
      }
 
-/*//ADMIN REQUEST
+//ADMIN REQUEST
 
      if(message.content == prefix + 'Admin') {
         var admin_embed = new Discord.RichEmbed()
@@ -65,7 +65,7 @@ if(message.content == prefix + 'regles01') {
 });*/
 
 
-    //if(command === 'foo') {
+    if(command === 'foo') {
         let AdminRole = message.guild.roles.find('name', 'Admin');
         if(message.member.roles.has(AdminRole.id)) {
             message.reply('Vous avez demandé un Administrateur du serveur, merci de patienter !', 'Vous pouvez déjà vous rendre dans le salon #Probleme_membre pour y exposer votre soucis !');
@@ -73,7 +73,7 @@ if(message.content == prefix + 'regles01') {
             message.channel.reply('Tu ne peux pas faire ça !')
         }
         
-    //}
+    }
 
 });
 
@@ -114,4 +114,4 @@ if(message.content == prefix + 'regles01') {
         min = Math.ceil(0);
         max = Math.floor(5);
         rand = Math.floor(Math.random() * (max - min +1) + min);
-    }*/
+    }
