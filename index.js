@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+/*const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 
@@ -114,4 +114,4 @@ if(message.content == prefix + 'regles01') {
         min = Math.ceil(0);
         max = Math.floor(5);
         rand = Math.floor(Math.random() * (max - min +1) + min);
-    }
+    }*/
