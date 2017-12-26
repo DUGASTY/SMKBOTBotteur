@@ -62,7 +62,7 @@ if(message.content == prefix + 'regles01') {
         console.log('attente admin');
      }
 
-});*/
+});
 
 
     /*if(command === 'foo') {
