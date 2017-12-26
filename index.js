@@ -29,6 +29,15 @@ var prefix = ('/');
             message.reply('Hey petit asticot !'); 
         }
 
+//REGLES 
+
+if(message.content == prefix + 'regles01') {
+    var adjoint_embed = new Discord.RichEmbed()
+    .setColor('#0033cc')
+    .addField('Le serveur Discord est un endroit publique, où tout le monde est égal, on évite ainsi tout ce qui est :')
+    .addField('Troll / Flamming / Spamming / Flood / Insultes / Propos racistes, sexistes, politiques ou incitants à la haine / Hacking / Cracking / Piratage...')
+    message.channel.sendEmbed(regles01_embed); 
+ }    
         
 
 //ADJOINT REQUEST
@@ -56,15 +65,15 @@ var prefix = ('/');
 });*/
 
 
-    if(command === 'foo') {
+    //if(command === 'foo') {
         let AdminRole = message.guild.roles.find('name', 'Admin');
         if(message.member.roles.has(AdminRole.id)) {
-            message.reply('ok');
+            message.reply('Vous avez demandé un Administrateur du serveur, merci de patienter !', 'Vous pouvez déjà vous rendre dans le salon #Probleme_membre pour y exposer votre soucis !');
         } else {
             message.channel.reply('Tu ne peux pas faire ça !')
         }
         
-    }
+    //}
 
 });
 
