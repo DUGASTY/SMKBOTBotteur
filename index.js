@@ -75,7 +75,7 @@ if(message.content == prefix + 'regles01') {
         
     }*/
 
-});
+//});
 
 //MESSAGE DE BIENVENUE
 
