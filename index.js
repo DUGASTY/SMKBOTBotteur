@@ -32,7 +32,7 @@ var prefix = ('/');
 //REGLES 
 
 if(message.content == prefix + 'regles01') {
-    var adjoint_embed = new Discord.RichEmbed()
+    var regles01_embed = new Discord.RichEmbed()
     .setColor('#0033cc')
     .addField('Le serveur Discord est un endroit publique, où tout le monde est égal, on évite ainsi tout ce qui est :')
     .addField('Troll / Flamming / Spamming / Flood / Insultes / Propos racistes, sexistes, politiques ou incitants à la haine / Hacking / Cracking / Piratage...')
