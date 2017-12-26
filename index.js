@@ -41,6 +41,50 @@ if(message.content == prefix + 'regles01') {
     message.channel.sendEmbed(regles01_embed); 
  }    
         
+ if(message.content == prefix + 'regles02') {
+    var regles02_embed = new Discord.RichEmbed()
+    .setColor('#0033cc')
+    .addField('#general', 'Tout le flux qui ne demande pas de salon approprié doit passer par là !')
+    .addField('#regles_discord', 'Récapitule le tout')
+    .addField('#regles', 'Récapitule les règles en vigueurs dans le clan SMK sur COC uniquement !')
+    .addField('#nouveautes_coc', 'Annonce les news COC, notamment avec les vidéos Clash Of Clans Officiel ou Lordval, ainsi que vos trouvailles personnels')
+    .setFooter('Le salon General VOCAL quand à lui est libre à tous, pour toute question / jeu en réseau / ou simplement pour discuter ! ')
+    message.channel.sendEmbed(regles02_embed); 
+ }    
+
+ if(message.content == prefix + 'regles03') {
+    var regles03_embed = new Discord.RichEmbed()
+    .setColor('#0033cc')
+    .addField('#probleme_membre','Si vous rencontrez un soucis sur le serveur Discord, dans le clan sur COC, ou un soucis personnel')
+    .addField('#probleme_avec_un_membre','Problème direct ou indirect avec un autre membre de la team, quel qu`il soit !')
+    .addField('#table_ronde','Channel privé réservé au STAFF du clan')
+    .addField('#admin','Channel privé réservé au STAFF du serveur Discord')
+    .addField('#test-bot','Salon d`étude du petit monstre')
+    .setFooter('Le Salon VOCAL Réunion Adjoint est réservé aux adjoints du clan, afin de pouvoir converser dans un espace sécurisé')
+    message.channel.sendEmbed(regles03_embed); 
+ }    
+
+ if(message.content == prefix + 'regles04') {
+    var regles04_embed = new Discord.RichEmbed()
+    .setColor('#0033cc')
+    .addField('#strat_gdc','Salon réservé au Chef de Guerre pour y déployer sa stratégie du jour')
+    .addField('#demandes_gdc','Channel de posts de demandes pour la guerre')
+    .addField('#discussion_cibles_gdc','Afin de négocier une stratégie que vous ne sentez pas à titre personnel')
+    .addField('#villages_gdc','Channel dédié aux posts de villages de guerre')
+    .addField('#compos_gdc','Posts de compos personnelles ou trouvailles du net pour des compos de guerre')
+    message.channel.sendEmbed(regles04_embed); 
+ }   
+
+ if(message.content == prefix + 'regles05') {
+    var regles05_embed = new Discord.RichEmbed()
+    .setColor('#0033cc')
+    .addField('#test_villages','Villages personnels uniquement, pour le test et la critique d`un nouveau village')
+    .addField('#propositions_nouveautes_du_clan','Channel réservé à vos idées personnelles, pour améliorer le clan')
+    .addField('#graphisme_dev','Tout ce qui touche à l`univers du graphisme ou de la programmation, venez nous en parler')
+    .addField('#absence-longue-duree','Channel dédié pour vous assurer le fait d`avoir mit au courant le clan')
+    .addField('#compos_farm','Posts de compos personnelles ou trouvailles du net pour des compos de farm ou loisir')
+    message.channel.sendEmbed(regles05_embed); 
+ }   
 
 //ADJOINT REQUEST
 
