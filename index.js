@@ -88,13 +88,19 @@ if(message.content == prefix + 'regles01') {
 
 //ADJOINT REQUEST
 
-     if(message.content == prefix + 'Adjoint') {
+ /*    if(message.content == prefix + 'Adjoint') {
         var adjoint_embed = new Discord.RichEmbed()
         .setColor('#FFFF00')
         .addField('Vous avez demandé un Adjoint du clan', 'ne bougez pas, on va le faire venir !')
         message.channel.sendEmbed(adjoint_embed); 
         console.log('attente adjoint');
      }
+*/
+
+
+
+
+
 
 //ADMIN REQUEST
 
@@ -127,6 +133,7 @@ if(message.content == prefix + 'regles01') {
 
     bot.on('guildMemberAdd', member => {
         let role = member.guild.roles.find('name', 'Membre');
+        let guild = member.guild;
         random();
         if(rand == 0){
             member.guild.channels.find('name', 'test-bot').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ');
@@ -161,3 +168,5 @@ if(message.content == prefix + 'regles01') {
         max = Math.floor(5);
         rand = Math.floor(Math.random() * (max - min +1) + min);
     }
+
+    //member.guild.channels.find('name', 'test-bot').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ');
