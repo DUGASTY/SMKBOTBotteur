@@ -65,7 +65,7 @@ if(message.content == prefix + 'regles01') {
 });*/
 
 
-    if(command === 'foo') {
+    /*if(command === 'foo') {
         let AdminRole = message.guild.roles.find('name', 'Admin');
         if(message.member.roles.has(AdminRole.id)) {
             message.reply('Vous avez demandé un Administrateur du serveur, merci de patienter !', 'Vous pouvez déjà vous rendre dans le salon #Probleme_membre pour y exposer votre soucis !');
@@ -73,7 +73,7 @@ if(message.content == prefix + 'regles01') {
             message.channel.reply('Tu ne peux pas faire ça !')
         }
         
-    }
+    }*/
 
 });
 
