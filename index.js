@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 const chalk = require('chalk');
 
 var prefix = ('/');
+var prefixMention = ('@');
 
 //JEU DU BOT 
 
@@ -109,10 +110,10 @@ var prefix = ('/');
 
 //TEST
 
-/*if(message.content == message.mentions.role.first()){
+if(message.content.startsWith(prefixMention + 'Adjoint')) {
 
     message.reply('Hey petit asticot !'); 
-}*/
+}
 
 
 
