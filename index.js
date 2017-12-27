@@ -47,7 +47,7 @@ if(message.content == prefix + 'regles01') {
         
  if(message.content == prefix + 'regles02') {
     var regles02_embed = new Discord.RichEmbed()
-    .setTitle('__**GENERAL**__')
+    .setDescription('**GENERAL**')
     .setColor('#0033cc')
     .addField('#general', 'Tout le flux qui ne demande pas de salon approprié doit passer par là !')
     .addField('#regles_discord', 'Récapitule le tout')
