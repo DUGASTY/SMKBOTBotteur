@@ -110,7 +110,7 @@ bot.on('message', (message) => {
 
 
 //TEST
-if (message.mentions.users.size < 1) return message.reply ('message test mention');
+//if (message.mentions.users.size < 1) return message.reply ('message test mention');
 
 
 
