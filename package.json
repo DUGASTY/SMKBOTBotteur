@@ -1,6 +1,6 @@
 {
   "name": "LeBotteur",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "BOT du serveur SMK Sniper's",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "Yvan DUGAST, alias DUGASTY56 ou DUGASTY",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.3.0",
     "discord.js": "^11.2.1"
   }
 }

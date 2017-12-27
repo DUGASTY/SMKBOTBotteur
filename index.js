@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-
+const chalk = require('chalk');
 
 var prefix = ('/');
 
@@ -31,15 +31,15 @@ var prefix = ('/');
 
 //REGLES 
 
-if(message.content == prefix + 'regles01') {
-    var regles01_embed = new Discord.RichEmbed()
-    .setColor('#0033cc')
-    .addField('Le serveur Discord est un endroit publique, où tout le monde est égal, on évite ainsi tout ce qui est :', 'Troll / Flamming / Spamming / Flood / Insultes / Propos racistes, sexistes, politiques ou incitants à la haine / Hacking / Cracking / Piratage...')
-    .addField('Pas de pubs pour d`autres clans ou team', 'Possibilité d`invité des joueurs non presents dans le clan')
-    .addField('Lisez le descriptif de chaque salon et vérifiez que vous êtes dans le bon en postant', 'Sinon un moderateur vous mettra le bon salon ou poster avec #general par exemple')
-    .addField('N`utilisez la mention @ everyvone que si nécessaire', 'privilegiez @Adjoint, @Admin ou @joueurConcerné')
-    message.channel.sendEmbed(regles01_embed); 
- }    
+    if(message.content == prefix + 'regles01') {
+        var regles01_embed = new Discord.RichEmbed()
+        .setColor('#0033cc')
+        .addField('Le serveur Discord est un endroit publique, où tout le monde est égal, on évite ainsi tout ce qui est :', 'Troll / Flamming / Spamming / Flood / Insultes / Propos racistes, sexistes, politiques ou incitants à la haine / Hacking / Cracking / Piratage...')
+        .addField('Pas de pubs pour d`autres clans ou team', 'Possibilité d`invité des joueurs non presents dans le clan')
+        .addField('Lisez le descriptif de chaque salon et vérifiez que vous êtes dans le bon en postant', 'Sinon un moderateur vous mettra le bon salon ou poster avec #general par exemple')
+        .addField('N`utilisez la mention @ everyvone que si nécessaire', 'privilegiez @Adjoint, @Admin ou @joueurConcerné')
+        message.channel.sendEmbed(regles01_embed); 
+    }    
         
  if(message.content == prefix + 'regles02') {
     var regles02_embed = new Discord.RichEmbed()
@@ -86,20 +86,14 @@ if(message.content == prefix + 'regles01') {
     message.channel.sendEmbed(regles05_embed); 
  }   
 
-//ADJOINT REQUEST
+// ADJOINT REQUEST
 
- /*    if(message.content == prefix + 'Adjoint') {
+     if(message.content == prefix + 'Adjoint') {
         var adjoint_embed = new Discord.RichEmbed()
         .setColor('#FFFF00')
         .addField('Vous avez demandé un Adjoint du clan', 'ne bougez pas, on va le faire venir !')
         message.channel.sendEmbed(adjoint_embed); 
-        console.log('attente adjoint');
      }
-*/
-
-
-
-
 
 
 //ADMIN REQUEST
@@ -108,26 +102,23 @@ if(message.content == prefix + 'regles01') {
         var admin_embed = new Discord.RichEmbed()
             .setColor('#E32416')
             .addField('Vous avez demandé un Administrateur du serveur, merci de patienter !', 'Vous pouvez déjà vous rendre dans le salon #Probleme_membre pour y exposer votre soucis !')
-            .addField('Désolé pour la gêne que vous avez rencontré', 'Nous allons faire notre possible pour y remédier !')
             .setFooter('Merci de votre compréhension')
         message.channel.sendEmbed(admin_embed); 
-        console.log('attente admin');
      }
 
+
+//TEST
+
+if(message.content == message.mentions.role){
+
+    message.reply('Hey petit asticot !'); 
+}
+
+
+
+
+
 });
-
-
-    /*if(command === 'foo') {
-        let AdminRole = message.guild.roles.find('name', 'Admin');
-        if(message.member.roles.has(AdminRole.id)) {
-            message.reply('Vous avez demandé un Administrateur du serveur, merci de patienter !', 'Vous pouvez déjà vous rendre dans le salon #Probleme_membre pour y exposer votre soucis !');
-        } else {
-            message.channel.reply('Tu ne peux pas faire ça !')
-        }
-        
-    }*/
-
-//});
 
 //MESSAGE DE BIENVENUE
 
@@ -163,10 +154,11 @@ if(message.content == prefix + 'regles01') {
         
     });
   
+
+//FONCTION RANDOM PHRASES ALEATOIRES
+
     function random(min, max) {
         min = Math.ceil(0);
         max = Math.floor(5);
         rand = Math.floor(Math.random() * (max - min +1) + min);
     }
-
-    //member.guild.channels.find('name', 'test-bot').send(':underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: ');
