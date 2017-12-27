@@ -32,32 +32,22 @@ bot.on('message', (message) => {
 
 
 //REGLES 
-if(message.content == prefix + 'reglesG') {
-    var reglesG_embed = new Discord.RichEmbed()
-    .setTitle('__**Bienvenue sur le serveur SMK Sniper`s, voici les quelques règles à connaître !**__ \n__***LES BASES***__')
+if(message.content == prefix + 'regles01') {
+    var regles01_embed = new Discord.RichEmbed()
+    .setTitle('__**Bienvenue sur le serveur SMK Sniper`s, voici les quelques règles à connaître !**__ ')
     .setColor('#0033cc')
     .addBlankField(true)
     .addField('Pas de pubs pour d`autres clans ou team', 'Possibilité d`invité des joueurs non presents dans le clan')
     .addField('Lisez le descriptif de chaque salon et vérifiez que vous êtes dans le bon en postant', 'Sinon un moderateur vous mettra le bon salon ou poster avec #general par exemple')
     .addField('N`utilisez la mention @ everyvone que si nécessaire', 'privilegiez @Adjoint, @Admin ou @joueurConcerné')
-    .addField('**Le serveur Discord est un endroit publique, __on évite ainsi tout ce qui est :__**', '```Troll / Flamming / Spamming / Flood / Insultes / Menaces \nPropos racistes / Sexistes / Politiques / Violent \nHacking / Cracking / Fishing...```')
-    message.channel.sendEmbed(reglesG_embed); 
+    .addField('Le serveur Discord est un endroit publique, on évite ainsi tout ce qui est :', '```Troll / Flamming / Spamming / Flood / Insultes / Menaces \nPropos racistes / Sexistes / Politiques / Violent \nHacking / Cracking / Fishing...```')
+    message.channel.sendEmbed(regles01_embed); 
 }    
-
-
-    if(message.content == prefix + 'regles01') {
-        var regles01_embed = new Discord.RichEmbed()
-        .setTitle('Bienvenue sur le serveur SMK Sniper`s, voici les quelques règles à connaître !')
-        .setColor('#0033cc')
-        .addField('Le serveur Discord est un endroit publique, où tout le monde est égal, on évite ainsi tout ce qui est :', 'Troll / Flamming / Spamming / Flood / Insultes / Propos racistes, sexistes, politiques ou incitants à la haine / Hacking / Cracking / Piratage...')
-        .addField('Pas de pubs pour d`autres clans ou team', 'Possibilité d`invité des joueurs non presents dans le clan')
-        .addField('Lisez le descriptif de chaque salon et vérifiez que vous êtes dans le bon en postant', 'Sinon un moderateur vous mettra le bon salon ou poster avec #general par exemple')
-        .addField('N`utilisez la mention @ everyvone que si nécessaire', 'privilegiez @Adjoint, @Admin ou @joueurConcerné')
-        message.channel.sendEmbed(regles01_embed); 
-    }    
+   
         
  if(message.content == prefix + 'regles02') {
     var regles02_embed = new Discord.RichEmbed()
+    .setTitle('__**GENERAL**__')
     .setColor('#0033cc')
     .addField('#general', 'Tout le flux qui ne demande pas de salon approprié doit passer par là !')
     .addField('#regles_discord', 'Récapitule le tout')
@@ -69,6 +59,7 @@ if(message.content == prefix + 'reglesG') {
 
  if(message.content == prefix + 'regles03') {
     var regles03_embed = new Discord.RichEmbed()
+    .setTitle('**STAFF**')
     .setColor('#0033cc')
     .addField('#probleme_membre','Si vous rencontrez un soucis sur le serveur Discord, dans le clan sur COC, ou un soucis personnel')
     .addField('#probleme_avec_un_membre','Problème direct ou indirect avec un autre membre de la team, quel qu`il soit !')
@@ -81,6 +72,7 @@ if(message.content == prefix + 'reglesG') {
 
  if(message.content == prefix + 'regles04') {
     var regles04_embed = new Discord.RichEmbed()
+    .setTitle('**GDC**')
     .setColor('#0033cc')
     .addField('#strat_gdc','Salon réservé au Chef de Guerre pour y déployer sa stratégie du jour')
     .addField('#demandes_gdc','Channel de posts de demandes pour la guerre')
@@ -92,11 +84,13 @@ if(message.content == prefix + 'reglesG') {
 
  if(message.content == prefix + 'regles05') {
     var regles05_embed = new Discord.RichEmbed()
+    .setTitle('**VIE DU CLAN**')
     .setColor('#0033cc')
     .addField('#test_villages','Villages personnels uniquement, pour le test et la critique d`un nouveau village')
     .addField('#propositions_nouveautes_du_clan','Channel réservé à vos idées personnelles, pour améliorer le clan')
     .addField('#graphisme_dev','Tout ce qui touche à l`univers du graphisme ou de la programmation, venez nous en parler')
     .addField('#absence-longue-duree','Channel dédié pour vous assurer le fait d`avoir mit au courant le clan')
+    .addBlankField(true)
     .addField('#compos_farm','Posts de compos personnelles ou trouvailles du net pour des compos de farm ou loisir')
     message.channel.sendEmbed(regles05_embed); 
  }   
