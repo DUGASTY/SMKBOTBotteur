@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 const chalk = require('chalk');
 
 var prefix = ('/');
-var prefixMention = ('@');
+
 
 //JEU DU BOT 
 
@@ -18,17 +18,17 @@ var prefixMention = ('@');
 
 //MESSAGE DESTINÉ AU BOT PAR LES UTILISATEURS 
 
-    bot.on('message', (message) => {
+bot.on('message', (message) => {
 
-        if(message.content == 'bonjour bot') {
+    if(message.content == 'bonjour bot') {
 
-            message.reply('Salut à toi ! Ravi que tu te soucie de moi, je sais en prendre bonne note !'); 
-        }
+         message.reply('Salut à toi ! Ravi que tu te soucie de moi, je sais en prendre bonne note !'); 
+    }
 
-        if(message.content == 'bonjour le botteur') {
+    if(message.content == 'bonjour le botteur') {
 
-            message.reply('Hey petit asticot !'); 
-        }
+        message.reply('Hey petit asticot !'); 
+    }
 
 //REGLES 
 
@@ -109,16 +109,6 @@ var prefixMention = ('@');
 
 
 //TEST
-
-if(message.content.startsWith(prefixMention + 'Adjoint')) {
-
-    message.reply('Hey petit asticot !'); 
-}
-
-
-
-
-
 });
 
 //MESSAGE DE BIENVENUE
@@ -128,27 +118,27 @@ if(message.content.startsWith(prefixMention + 'Adjoint')) {
         let guild = member.guild;
         random();
         if(rand == 0){
-            guild.channels.find('name', 'test-bot').sendMessage(`:underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: `);
+            guild.channels.find('name', 'general').sendMessage(`:underage: Bienvenue ${member.user.username} Je suis ton ami, mais me fais pas trop chier non plus je reste un robot capricieux :smiling_imp: `);
         }
 
         if(rand == 1){
-            guild.channels.find('name', 'test-bot').sendMessage(`:nail_care:  Bienvenue ${member.user.username} Dis bonjour quand tu me croise, tu as interêt.. parce que je suis un fou moi, UN DÉGLINGO !!! je suis capable du pire... DU PIIIIIIRE !!!!!!  :baby_bottle:`);
+            guild.channels.find('name', 'general').sendMessage(`:nail_care:  Bienvenue ${member.user.username} Dis bonjour quand tu me croise, tu as interêt.. parce que je suis un fou moi, UN DÉGLINGO !!! je suis capable du pire... DU PIIIIIIRE !!!!!!  :baby_bottle:`);
         }
 
         if(rand == 2){
-            guild.channels.find('name', 'test-bot').sendMessage(`:poop: WOOOOOOAAAAAAAAWWWWWW, classe ta collection de poupée russe gabonaise ${member.user.username} dis.... tu fais quoi mercredi prochain ? je fais un petit dîner entre amis.... :innocent: :innocent: :champagne_glass:`);
+            guild.channels.find('name', 'general').sendMessage(`:poop: WOOOOOOAAAAAAAAWWWWWW, classe ta collection de poupée russe gabonaise ${member.user.username} dis.... tu fais quoi mercredi prochain ? je fais un petit dîner entre amis.... :innocent: :innocent: :champagne_glass:`);
         }
 
         if(rand == 3){
-            guild.channels.find('name', 'test-bot').sendMessage(`:ambulance: Bienvenue ${member.user.username} met toi à ton aise, je répondrais au mieux à tes attentes... mais reste tranquil mon gars, je suis un simple robot mais je peux te mettre une belle volée !!! ...... bah quoi faut pas avoir peur... rhoo on peut plus rigoler jme casse ! :persevere:` );
+            guild.channels.find('name', 'general').sendMessage(`:ambulance: Bienvenue ${member.user.username} met toi à ton aise, je répondrais au mieux à tes attentes... mais reste tranquil mon gars, je suis un simple robot mais je peux te mettre une belle volée !!! ...... bah quoi faut pas avoir peur... rhoo on peut plus rigoler jme casse ! :persevere:` );
         }
 
         if(rand == 4){
-            guild.channels.find('name', 'test-bot').sendMessage(`:grin: Mesdames et Messieurs les gens, veuillez accueillir comme il se doit ${member.user.username} YOUHOUUUUUUU :underage: :tropical_drink: :champagne: :beers: `);
+            guild.channels.find('name', 'general').sendMessage(`:grin: Mesdames et Messieurs les gens, veuillez accueillir comme il se doit ${member.user.username} YOUHOUUUUUUU :underage: :tropical_drink: :champagne: :beers: `);
         }
 
         if(rand == 5){
-            guild.channels.find('name', 'test-bot').sendMessage(`:tongue: Ouaaiiii de la chaire fraîche !!!! je peux jouer avec toi ? dis ${member.user.username} tu veux être mon ami ? dis oui :heart_eyes: :heart_eyes: stppp dis ouiiiii :heart_eyes: :innocent:`);
+            guild.channels.find('name', 'general').sendMessage(`:tongue: Ouaaiiii de la chaire fraîche !!!! je peux jouer avec toi ? dis ${member.user.username} tu veux être mon ami ? dis oui :heart_eyes: :heart_eyes: stppp dis ouiiiii :heart_eyes: :innocent:`);
         }
 
         member.addRole(role)
