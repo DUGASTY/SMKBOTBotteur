@@ -34,18 +34,13 @@ bot.on('message', (message) => {
 //REGLES 
 if(message.content == prefix + 'reglesG') {
     var reglesG_embed = new Discord.RichEmbed()
-    .setTitle('__**Bienvenue sur le serveur SMK Sniper`s, voici les quelques règles à connaître !**__ ')
+    .setTitle('__**Bienvenue sur le serveur SMK Sniper`s, voici les quelques règles à connaître !**__ \n__***LES BASES***__')
     .setColor('#0033cc')
-    //.setThumbnail('https://www.cjoint.com/doc/17_12/GLBuVrxhbUM_SMK-Snip-logo-youtube.png')
     .addBlankField(true)
-    .addField('**Le serveur Discord est un endroit publique, __on évite ainsi tout ce qui est :__**', '```Troll / Flamming / Spamming / Flood / Insultes / Menaces \nPropos racistes / Sexistes / Politiques / Violent \nHacking / Cracking / Fishing...```')
     .addField('Pas de pubs pour d`autres clans ou team', 'Possibilité d`invité des joueurs non presents dans le clan')
     .addField('Lisez le descriptif de chaque salon et vérifiez que vous êtes dans le bon en postant', 'Sinon un moderateur vous mettra le bon salon ou poster avec #general par exemple')
     .addField('N`utilisez la mention @ everyvone que si nécessaire', 'privilegiez @Adjoint, @Admin ou @joueurConcerné')
-    .addBlankField(true)
-    .setTitle('**GENERAL**')
-    .addBlankField(true)
-    .addField('#general', 'Tout le flux qui ne demande pas de salon approprié doit passer par là !')
+    .addField('**Le serveur Discord est un endroit publique, __on évite ainsi tout ce qui est :__**', '```Troll / Flamming / Spamming / Flood / Insultes / Menaces \nPropos racistes / Sexistes / Politiques / Violent \nHacking / Cracking / Fishing...```')
     message.channel.sendEmbed(reglesG_embed); 
 }    
 
