@@ -43,7 +43,9 @@ if(message.content == prefix + 'reglesG') {
     .addField('Lisez le descriptif de chaque salon et vérifiez que vous êtes dans le bon en postant', 'Sinon un moderateur vous mettra le bon salon ou poster avec #general par exemple')
     .addField('N`utilisez la mention @ everyvone que si nécessaire', 'privilegiez @Adjoint, @Admin ou @joueurConcerné')
     .addBlankField(true)
-    .addField('[#general](https://discordapp.com/channels/324520447276220416/324520447276220416)', 'Tout le flux qui ne demande pas de salon approprié doit passer par là !')
+    .setTitle('**GENERAL**')
+    .addBlankField(true)
+    .addField('#general', 'Tout le flux qui ne demande pas de salon approprié doit passer par là !')
     message.channel.sendEmbed(reglesG_embed); 
 }    
 
