@@ -36,7 +36,7 @@ if(message.content == prefix + 'reglesG') {
     var reglesG_embed = new Discord.RichEmbed()
     .setTitle('__**Bienvenue sur le serveur SMK Sniper`s, voici les quelques règles à connaître !**__ ')
     .setColor('#0033cc')
-    .setThumbnail('https://www.cjoint.com/doc/17_12/GLBuVrxhbUM_SMK-Snip-logo-youtube.png')
+    //.setThumbnail('https://www.cjoint.com/doc/17_12/GLBuVrxhbUM_SMK-Snip-logo-youtube.png')
     .addBlankField(true)
     .addField('Le serveur Discord est un endroit publique, où tout le monde est égal, on évite ainsi tout ce qui est :', 'Troll / Flamming / Spamming / Flood / Insultes / Propos racistes, sexistes, politiques ou incitants à la haine / Hacking / Cracking / Piratage...')
     .addField('Pas de pubs pour d`autres clans ou team', 'Possibilité d`invité des joueurs non presents dans le clan')
