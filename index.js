@@ -30,6 +30,7 @@ bot.on('message', (message) => {
         message.reply('Hey petit asticot !'); 
     }
 
+
 //REGLES 
 
     if(message.content == prefix + 'regles01') {
@@ -109,6 +110,12 @@ bot.on('message', (message) => {
 
 
 //TEST
+if (message.mentions.users.size < 1) return message.reply ('message test mention');
+
+
+
+
+
 });
 
 //MESSAGE DE BIENVENUE
