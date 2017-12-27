@@ -109,10 +109,10 @@ var prefix = ('/');
 
 //TEST
 
-if(message.content == message.mentions.role.first()){
+/*if(message.content == message.mentions.role.first()){
 
     message.reply('Hey petit asticot !'); 
-}
+}*/
 
 
 
