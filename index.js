@@ -38,10 +38,12 @@ if(message.content == prefix + 'reglesG') {
     .setColor('#0033cc')
     //.setThumbnail('https://www.cjoint.com/doc/17_12/GLBuVrxhbUM_SMK-Snip-logo-youtube.png')
     .addBlankField(true)
-    .addField('Le serveur Discord est un endroit publique, où tout le monde est égal,  \n __on évite ainsi tout ce qui est :__', '```Troll / Flamming / Spamming / Flood / Insultes / Menaces \n Propos racistes / Sexistes / Politiques / Violent \n Hacking / Cracking / Fishing...```')
+    .addField('**Le serveur Discord est un endroit publique, __on évite ainsi tout ce qui est :__**', '```Troll / Flamming / Spamming / Flood / Insultes / Menaces \nPropos racistes / Sexistes / Politiques / Violent \nHacking / Cracking / Fishing...```')
     .addField('Pas de pubs pour d`autres clans ou team', 'Possibilité d`invité des joueurs non presents dans le clan')
     .addField('Lisez le descriptif de chaque salon et vérifiez que vous êtes dans le bon en postant', 'Sinon un moderateur vous mettra le bon salon ou poster avec #general par exemple')
     .addField('N`utilisez la mention @ everyvone que si nécessaire', 'privilegiez @Adjoint, @Admin ou @joueurConcerné')
+    .addBlankField(true)
+    .addField('[#general](https://discordapp.com/channels/324520447276220416/324520447276220416)', 'Tout le flux qui ne demande pas de salon approprié doit passer par là !')
     message.channel.sendEmbed(reglesG_embed); 
 }    
 
