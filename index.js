@@ -17,7 +17,6 @@ var prefix = ('/');
 
 
 //MESSAGE DESTINÉ AU BOT PAR LES UTILISATEURS 
-
 bot.on('message', (message) => {
 
     if(message.content == 'bonjour bot') {
@@ -35,7 +34,6 @@ bot.on('message', (message) => {
 if(message.content == prefix + 'regles01') {
     var regles01_embed = new Discord.RichEmbed()
     .setTitle('__**Bienvenue sur le serveur SMK Sniper`s, voici les quelques règles à connaître !**__ ')
-    .setDescription('**LES BASES**')
     .setColor('#0033cc')
     .addBlankField(true)
     .addField('Pas de pubs pour d`autres clans ou team', 'Possibilité d`invité des joueurs non presents dans le clan')
@@ -48,7 +46,8 @@ if(message.content == prefix + 'regles01') {
         
  if(message.content == prefix + 'regles02') {
     var regles02_embed = new Discord.RichEmbed()
-    .setTitle('__**NOS SALONS**__')
+    .setTitle('__**Voici l`index de nos différents salons/channels**__')
+    .addBlankField(true)
     .setDescription('**GENERAL**')
     .setColor('#0033cc')
     .addField('#general', 'Tout le flux qui ne demande pas de salon approprié doit passer par là !')
