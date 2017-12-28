@@ -61,7 +61,7 @@ if(message.content == prefix + 'regles01') {
     .addField('#regles_discord', 'Récapitule le tout')
     .addField('#regles', 'Récapitule les règles en vigueurs dans le clan SMK sur COC uniquement !')
     .addField('#nouveautes_coc', 'Annonce les news COC, notamment avec les vidéos Clash Of Clans Officiel ou Lordval, ainsi que vos trouvailles personnels')
-    .setFooter('Le salon VOCAL General est libre à tous', 'https://www.cjoint.com/doc/17_12/GLCaQGOLHnM_microphone-2104091.svg')
+    .setFooter('Le salon VOCAL General est libre à tous', 'https://www.cjoint.com/doc/17_12/GLCt7Rw32yM_microphone-2104091-640.png')
     message.channel.sendEmbed(regles02_embed); 
  }    
 
@@ -74,7 +74,7 @@ if(message.content == prefix + 'regles01') {
     .addField('#table_ronde','Channel privé réservé au STAFF du clan')
     .addField('#admin','Channel privé réservé au STAFF du serveur Discord')
     .addField('#test-bot','Salon d`étude du petit monstre')
-    .setFooter('Le Salon VOCAL Réunion Adjoint est réservé aux adjoints du clan', 'https://www.cjoint.com/doc/17_12/GLCaQGOLHnM_microphone-2104091.svg')
+    .setFooter('Le Salon VOCAL Réunion Adjoint est réservé aux adjoints du clan', 'https://www.cjoint.com/doc/17_12/GLCt7Rw32yM_microphone-2104091-640.png')
     message.channel.sendEmbed(regles03_embed); 
  }    
 
