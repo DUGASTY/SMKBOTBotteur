@@ -43,11 +43,18 @@ if(message.content == prefix + 'regles01') {
     message.channel.sendEmbed(regles01_embed); 
 }    
    
+if(message.content == prefix + 'regles00') {
+    var regles00_embed = new Discord.RichEmbed()
+    .setTitle('__**Voici l`index de nos différents salons/channels**__')
+    .addBlankField(true)
+    .setColor('#0033cc')
+    message.channel.sendEmbed(regles00_embed); 
+}
+
+
         
  if(message.content == prefix + 'regles02') {
     var regles02_embed = new Discord.RichEmbed()
-    .setTitle('__**Voici l`index de nos différents salons/channels**__')
-    .addBlankField(true)
     .setDescription('**GENERAL**')
     .setColor('#0033cc')
     .addField('#general', 'Tout le flux qui ne demande pas de salon approprié doit passer par là !')
@@ -86,6 +93,7 @@ if(message.content == prefix + 'regles01') {
  if(message.content == prefix + 'regles05') {
     var regles05_embed = new Discord.RichEmbed()
     .setDescription('**VIE DU CLAN**')
+    .setFooter('Règles en cours pour SMK Sniper`s || ©Clash of Clans || 2017 ♥', 'https://www.cjoint.com/doc/17_12/GLCayf37qLM_SMK-Snip-logo-youtube.png')
     .setColor('#0033cc')
     .addField('#test_villages','Villages personnels uniquement, pour le test et la critique d`un nouveau village')
     .addField('#propositions_nouveautes_du_clan','Channel réservé à vos idées personnelles, pour améliorer le clan')
