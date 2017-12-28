@@ -45,8 +45,9 @@ if(message.content == prefix + 'regles00') {
    
 if(message.content == prefix + 'regles01') {
     var regles01_embed = new Discord.RichEmbed()
-    .setDescription('__**Voici l`index de nos différents salons/channels**__')
-    .addBlankField(true)
+    .setTitle('__**INDEX**__')
+    .setDescription('**NOS SALONS / CHANNELS**')
+    //.addBlankField(true)
     .setColor('#0033cc')
     message.channel.sendEmbed(regles01_embed); 
 }
