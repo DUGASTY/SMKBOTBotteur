@@ -31,8 +31,8 @@ bot.on('message', (message) => {
 
 
 //REGLES 
-if(message.content == prefix + 'regles01') {
-    var regles01_embed = new Discord.RichEmbed()
+if(message.content == prefix + 'regles00') {
+    var regles00_embed = new Discord.RichEmbed()
     .setTitle('__**Bienvenue sur le serveur SMK Sniper`s, voici les quelques règles à connaître !**__ ')
     .setColor('#0033cc')
     .addBlankField(true)
@@ -40,15 +40,15 @@ if(message.content == prefix + 'regles01') {
     .addField('Lisez le descriptif de chaque salon et vérifiez que vous êtes dans le bon en postant', 'Sinon un moderateur vous mettra le bon salon ou poster avec #general par exemple')
     .addField('N`utilisez la mention @ everyvone que si nécessaire', 'privilegiez @Adjoint, @Admin ou @joueurConcerné')
     .addField('Le serveur Discord est un endroit publique, on évite ainsi tout ce qui est :', '```Troll / Flamming / Spamming / Flood / Insultes / Menaces \nPropos racistes / Sexistes / Politiques / Violent \nHacking / Cracking / Fishing...```')
-    message.channel.sendEmbed(regles01_embed); 
+    message.channel.sendEmbed(regles00_embed); 
 }    
    
-if(message.content == prefix + 'regles00') {
-    var regles00_embed = new Discord.RichEmbed()
+if(message.content == prefix + 'regles01') {
+    var regles01_embed = new Discord.RichEmbed()
     .setTitle('__**Voici l`index de nos différents salons/channels**__')
     .addBlankField(true)
     .setColor('#0033cc')
-    message.channel.sendEmbed(regles00_embed); 
+    message.channel.sendEmbed(regles01_embed); 
 }
 
 
@@ -61,7 +61,7 @@ if(message.content == prefix + 'regles00') {
     .addField('#regles_discord', 'Récapitule le tout')
     .addField('#regles', 'Récapitule les règles en vigueurs dans le clan SMK sur COC uniquement !')
     .addField('#nouveautes_coc', 'Annonce les news COC, notamment avec les vidéos Clash Of Clans Officiel ou Lordval, ainsi que vos trouvailles personnels')
-    .setFooter('Le salon General VOCAL quand à lui est libre à tous, pour toute question / jeu en réseau / ou simplement pour discuter ! ')
+    .setFooter('Le salon VOCAL General est libre à tous', 'https://www.cjoint.com/doc/17_12/GLCaQGOLHnM_microphone-2104091.svg')
     message.channel.sendEmbed(regles02_embed); 
  }    
 
@@ -74,7 +74,7 @@ if(message.content == prefix + 'regles00') {
     .addField('#table_ronde','Channel privé réservé au STAFF du clan')
     .addField('#admin','Channel privé réservé au STAFF du serveur Discord')
     .addField('#test-bot','Salon d`étude du petit monstre')
-    .setFooter('Le Salon VOCAL Réunion Adjoint est réservé aux adjoints du clan, afin de pouvoir converser dans un espace sécurisé')
+    .setFooter('Le Salon VOCAL Réunion Adjoint est réservé aux adjoints du clan', 'https://www.cjoint.com/doc/17_12/GLCaQGOLHnM_microphone-2104091.svg')
     message.channel.sendEmbed(regles03_embed); 
  }    
 
@@ -92,8 +92,8 @@ if(message.content == prefix + 'regles00') {
 
  if(message.content == prefix + 'regles05') {
     var regles05_embed = new Discord.RichEmbed()
-    .setDescription('**VIE DU CLAN**')
-    .setFooter('Règles en cours pour SMK Sniper`s || ©Clash of Clans || 2017 ♥', 'https://www.cjoint.com/doc/17_12/GLCayf37qLM_SMK-Snip-logo-youtube.png')
+    .setDescription('**VIE DU CLAN - FARM**')
+    .setFooter('Application en cours pour | SMK Sniper`s | DISCORD | 2018 ', 'https://www.cjoint.com/doc/17_12/GLCayf37qLM_SMK-Snip-logo-youtube.png')
     .setColor('#0033cc')
     .addField('#test_villages','Villages personnels uniquement, pour le test et la critique d`un nouveau village')
     .addField('#propositions_nouveautes_du_clan','Channel réservé à vos idées personnelles, pour améliorer le clan')
