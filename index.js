@@ -63,6 +63,7 @@ bot.on('message', (message) => {
 
 //REGLES 
 if(message.content == prefix + 'regles00') {
+    message.delete();
     var regles00_embed = new Discord.RichEmbed()
     .setTitle('__**Bienvenue sur le serveur SMK Sniper`s, voici les quelques règles à connaître !**__ ')
     .setColor('#0033cc')
