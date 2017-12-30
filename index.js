@@ -19,6 +19,7 @@ var prefix = ('/');
 //MESSAGE DESTINÉ AU BOT PAR LES UTILISATEURS 
 bot.on('message', (message) => {
 
+    
     if(message.content == 'bonjour bot') {
 
          message.reply('Salut à toi ! Ravi que tu te soucie de moi, je sais en prendre bonne note !'); 
@@ -27,6 +28,35 @@ bot.on('message', (message) => {
     if(message.content == 'bonjour le botteur') {
 
         message.reply('Hey petit asticot !'); 
+    }
+
+
+    //CLEAR CHAT
+
+    let cont = message.content.slice(prefix.length).split(' ');
+    let args = const.slice(1);
+
+    if(message.startWith(prefix + 'Suppr')) {
+
+        async function purge() {
+            message.delete();
+
+        if(!message.member.roles.find('name', 'Admin')) {
+            message.channel.send('Seul les \`Admin\` ont le droit de clear le Chat !');
+            return;
+        }
+
+        if(isNaN(args[0])){
+            message.channel.send('Si tu me dis pas combien de messages... je risque pas de t`aider mon petit pote !')
+        }
+
+            const fetched = await message.channel.fetchMessage({limit: args[0]});
+
+            message.channel.bulkDelete(fetched)
+                .catch(error => message.channel.send(`Error: ${error}`));
+        }
+
+    purge();
     }
 
 
