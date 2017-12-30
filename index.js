@@ -42,12 +42,12 @@ bot.on('message', (message) => {
             message.delete();
 
         if(!message.member.roles.find('name', 'Admin')) {
-            message.channel.send('Seul les Admins ont le droit de clear le Chat !');
+            message.reply('Seul les Admins ont le droit de clear le Chat !');
             return;
         }
 
         if(isNaN(args[0])){
-            message.channel.send('Si tu me dis pas combien de messages... je risque pas de t`aider mon p`ti pote !')
+            message.reply('Si tu me dis pas combien de messages... je risque pas de t`aider mon p`ti pote !');
         }
 
             const fetched = await message.channel.fetchMessages({limit: args[0]});
@@ -76,6 +76,7 @@ if(message.content == prefix + 'regles00') {
 }    
    
 if(message.content == prefix + 'regles01') {
+    message.delete();
     var regles01_embed = new Discord.RichEmbed()
     .setTitle('__**INDEX**__')
     .setDescription('**NOS SALONS / CHANNELS**')
@@ -87,6 +88,7 @@ if(message.content == prefix + 'regles01') {
 
         
  if(message.content == prefix + 'regles02') {
+    message.delete();
     var regles02_embed = new Discord.RichEmbed()
     .setDescription('**GENERAL**')
     .setColor('#0033cc')
@@ -99,6 +101,7 @@ if(message.content == prefix + 'regles01') {
  }    
 
  if(message.content == prefix + 'regles03') {
+    message.delete();
     var regles03_embed = new Discord.RichEmbed()
     .setDescription('**STAFF**')
     .setColor('#0033cc')
@@ -112,6 +115,7 @@ if(message.content == prefix + 'regles01') {
  }    
 
  if(message.content == prefix + 'regles04') {
+    message.delete();
     var regles04_embed = new Discord.RichEmbed()
     .setDescription('**GDC**')
     .setColor('#0033cc')
@@ -124,6 +128,7 @@ if(message.content == prefix + 'regles01') {
  }   
 
  if(message.content == prefix + 'regles05') {
+    message.delete();
     var regles05_embed = new Discord.RichEmbed()
     .setDescription('**VIE DU CLAN - FARM**')
     .setFooter('Application en cours pour | SMK Sniper`s | DISCORD | 2018 ', 'https://www.cjoint.com/doc/17_12/GLCayf37qLM_SMK-Snip-logo-youtube.png')
