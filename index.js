@@ -33,7 +33,7 @@ bot.on('message', (message) => {
 
     //CLEAR CHAT
 
-    let cont = message.content.slice(prefix.length).split(' ');
+    let cont = message.content.slice(prefix.length).split(" ");
     let args = cont.slice(1);
 
     if(message.content == prefix + 'suppr') {
@@ -50,7 +50,7 @@ bot.on('message', (message) => {
             message.channel.send('Si tu me dis pas combien de messages... je risque pas de t`aider mon p`ti pote !')
         }
 
-            const fetched = await message.channel.fetchMessage({limit: args[0]});
+            const fetched = await message.channel.fetchMessages({limit: args[0]});
             console.log(fetched.size + 'commande suppr utilisée');
 
             message.channel.bulkDelete(fetched)
