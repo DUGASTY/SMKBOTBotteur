@@ -41,10 +41,10 @@ bot.on('message', (message) => {
         async function purge() {
             message.delete();
 
-        /*if(!message.member.roles.find('name', 'Admin')) {
+        if(!message.member.roles.find('name', 'Admin')) {
             message.channel.send('Seul les Admins ont le droit de clear le Chat !');
             return;
-        }*/
+        }
 
         if(isNaN(args[0])){
             message.channel.send('Si tu me dis pas combien de messages... je risque pas de t`aider mon p`ti pote !')
@@ -54,7 +54,7 @@ bot.on('message', (message) => {
             console.log(fetched.size + 'commande suppr utilisée');
 
             message.channel.bulkDelete(fetched)
-                .catch(error => message.channel.send(`Error: ${error}`));
+                .catch(error => message.channel.send('Error: ${error}'));
         }
 
     purge();
