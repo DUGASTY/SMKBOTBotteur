@@ -34,9 +34,9 @@ bot.on('message', (message) => {
     //CLEAR CHAT
 
     let cont = message.content.slice(prefix.length).split(' ');
-    let args = const.slice(1);
+    let args = cont.slice(1);
 
-    if(message.startWith(prefix + 'Suppr')) {
+    if(message.content == prefix + 'suppr') {
 
         async function purge() {
             message.delete();
